@@ -4,7 +4,7 @@
   <br>
 
   <input type="text" id="inputTodo" (keydown.enter)="onEnter($event)">
-  <button (click)="setTodo()">Button</button>
+  <button (click)="setTodo()">Add</button>
 
   <ul *ngIf="todos.length > 0; else emptyArray">
     <li *ngFor='let todo of todos; let i = index'>
